@@ -1,0 +1,41 @@
+
+
+#include <stdio.h>
+
+int main()
+{
+    // Declare variables
+    float basicSalary;
+    float housing;
+    float transport;
+    float tax;
+    float grossSalary;
+    float netSalary;
+
+    // Ask the user to enter information
+    printf("Enter basic salary: ");
+    scanf("%f", &basicSalary);
+
+    printf("Enter housing allowance: ");
+    scanf("%f", &housing);
+
+    printf("Enter transport allowance: ");
+    scanf("%f", &transport);
+
+    printf("Enter tax: ");
+    scanf("%f", &tax);
+
+    // Calculate gross and net salary
+    grossSalary = basicSalary + housing + transport;
+
+    netSalary = grossSalary - tax;
+
+    // Display results
+    printf("\n===== EMPLOYEE SALARY REPORT =====\n");
+
+    printf("Gross Salary: %.2f\n", grossSalary);
+
+    printf("Net Salary: %.2f\n", netSalary);
+
+    return 0;
+}
